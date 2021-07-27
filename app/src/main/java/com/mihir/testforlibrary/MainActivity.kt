@@ -31,5 +31,11 @@ class MainActivity : AppCompatActivity() {
         btn_clearscreen.setOnClickListener {
             drawing_view.clearDrawingBoard()
         }
+        val alpha = drawing_view.getBrushAlpha()
+        drawing_view.erase()
+        val brushSize = drawing_view.getBrushSize()
+        val brushColor = drawing_view.getBrushColor()
+
+        val drawing = drawing_view.getDrawing()
     }
 }
